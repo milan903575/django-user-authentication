@@ -11,8 +11,8 @@ from django.utils.encoding import force_bytes
 from django.template.loader import render_to_string
 from django.urls import reverse
 from django.http import HttpResponseBadRequest
-from .forms import SignUpForm  # Custom signup form
-from django.conf import settings  # Ensure email settings are configured
+from .forms import SignUpForm  
+from django.conf import settings  
 
 
 def signup_view(request):
@@ -39,9 +39,9 @@ def login_view(request):
         # Check if input is email
         user = User.objects.filter(email=username_or_email).first()
         if user:
-            username = user.username  # Get the username from the email
+            username = user.username  
         else:
-            username = username_or_email  # Assume input is username
+            username = username_or_email  
 
         user = authenticate(request, username=username, password=password)
 
