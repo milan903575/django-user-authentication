@@ -3,7 +3,7 @@
 ##  Overview
 This project is a **Django-based authentication system** that includes essential features like **user registration, login, logout, password reset, and profile management**. The authentication system is built using Django's built-in authentication framework and custom enhancements.
 
-## 🚀 Features
+##  Features
 - **User Registration** (Signup with email & username)
 - **User Login** (Supports login via username or email)
 - **User Logout**
